@@ -27,8 +27,7 @@ environment {
               }
             }
           }
-        
-        }
+      
         
          
         stage('maven package') {
