@@ -31,7 +31,7 @@ environment {
             steps {
                 echo 'Checking quality gate...'
                 script {
-                    timeout(time: 20, unit: 'MINUTES') {
+                    timeout(time: 10, unit: 'MINUTES') {
                         def qg = waitForQualityGate()
                         if (qg.status != 'OK') {
                             error "Pipeline stopped because of quality gate status: ${qg.status}"
