@@ -23,7 +23,7 @@ environment {
             
             steps {
               withSonarQubeEnv('SonarServer') {
-                  sh 'mvn sonar:qube -Dsonar.projectKey=ismahussein_geolocation -Dsonar.java.binaries=.'
+                  sh 'mvn sonar:sonar -Dsonar.projectKey=ismahussein_geolocation -Dsonar.java.binaries=.'
               }
             }
           }
